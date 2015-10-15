@@ -80,6 +80,13 @@
     return cell;
 }
 
+- (void) refreshCellAtIndexPath:(NSIndexPath *)indexPath inCollectionView:(UICollectionView *)collectionView    {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:self.cellIdentifier
+                                                                           forIndexPath:indexPath];
+    id item = [self itemAtIndexPath:indexPath];
+    self.configureCellBlock(cell, item);
+}
+
 #pragma mark - Convenience Methods
 
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath

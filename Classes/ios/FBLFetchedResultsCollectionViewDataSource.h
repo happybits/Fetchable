@@ -44,6 +44,8 @@ typedef void (^FBLConfigureCellBlock)(UICollectionViewCell *, id);
  */
 - (id)init __attribute__((unavailable("Designated Initializer initWithFetchedResultsController:cellIdentifier:configureCellBlock: must be used.")));
 
+- (void) refreshCellAtIndexPath:(NSIndexPath *)indexPath inCollectionView:(UICollectionView *)collectionView;
+
 #pragma mark - Designated Initializer
 
 /**
