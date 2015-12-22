@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
                     FRC-backed UITableView and UICollectionViewControllers in very little code.
                     DESC
   spec.homepage     = 'https://github.com/phatblat/Fetchable'
-  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
+  spec.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   spec.author       = { 'Ben Chatelain' => 'benchatelain@gmail.com' }
   spec.social_media_url = 'https://twitter.com/phatblat'
 
